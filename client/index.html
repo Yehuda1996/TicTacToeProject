@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=D5v6Faacs6m5&format=png&color=000000">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tic Tac Toe</title>
 </head>
+
 <body>
-    
+    <main>
+        <div id="navbar">Tic Tac Toe</div>
+        <section id="section_login">
+            <h1>Welcome to the Login Page</h1>
+            <div id="login_container">
+                <div id="input_area">
+                    <input id="login_input" type="text" placeholder="Type your user name...">
+                    <input id="login_input" type="password" placeholder="Type your password...">
+                    <button id="login_button">Login</button>
+                </div>
+            </div>
+        </section>
+        <section id="game-board">
+            <h2>Tic-Tac-Toe Board</h2>
+            <div id="board">
+                <div class="square" id="square0"></div>
+                <div class="square" id="square1"></div>
+                <div class="square" id="square2"></div>
+                <div class="square" id="square3"></div>
+                <div class="square" id="square4"></div>
+                <div class="square" id="square5"></div>
+                <div class="square" id="square6"></div>
+                <div class="square" id="square7"></div>
+                <div class="square" id="square8"></div>
+            </div> 
+            <div id="endGame">
+                <input type="button" value="Restart" id="restartButton" onclick="restartButton()"/>
+            </div> 
+        </section>
+        <section id="results-table">
+            <table id="table">
+                <tr>
+                    <td>Player Name</td>
+                    <td>W</td>
+                    <td>L</td>
+                    <td>T</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="./app.js"></script>
 </body>
+
 </html>
