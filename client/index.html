@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
     <link rel="icon" href="https://img.icons8.com/?size=100&id=D5v6Faacs6m5&format=png&color=000000">
     <link rel="stylesheet" href="./style.css">
     <title>Tic Tac Toe</title>
@@ -36,8 +37,11 @@
                 <div class="square" id="square8"></div>
             </div> 
             <div id="endGame">
-                <input type="button" value="Restart" id="restartButton" onclick="restartButton()"/>
+                <input type="button" value="Restart" id="restartButton"/>
             </div> 
+            <div id="toResults">
+                <input type="button" value="Results" id="resultsButton">
+            </div>
         </section>
         <section id="results-table">
             <table id="table">
